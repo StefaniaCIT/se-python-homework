@@ -5,13 +5,13 @@
 """
 
 # Cream o variabila l1 care are ca si valoare o lista goala
-l1 = []
+l1 = [1]
 
 # Preluam input de la tastatura si il salvam in variabila x
 x = input()
 
 # Cat timp de la tastatura nu primim exit ca si valoare
-while x != 'exit':
+while x != 'stop':
     # Adaugam la lista elementul nou primit de la tastatura
     l1.append(x)
     x = input()
