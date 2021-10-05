@@ -5,7 +5,7 @@
 """
 
 # Cream o variabila l1 care are ca si valoare o lista goala
-l1 = [1]
+l1 = []
 
 # Preluam input de la tastatura si il salvam in variabila x
 x = input()
