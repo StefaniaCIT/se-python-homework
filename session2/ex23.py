@@ -14,3 +14,14 @@
         Veti primi: 'cojoc'
         Veti printa: True
 """
+a= input()
+l1= []
+l2= []
+for x in a:
+    l1.append(x)
+    l2.append(x)
+l2.reverse()
+if l1 == l2 : 
+    print(True)
+else:
+    print(False)

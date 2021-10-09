@@ -7,3 +7,7 @@
         Veti primi: 'Center for Intelligent Machines', 2, 5
         Veti printa: 'nter'
 """
+a= input()
+x= int(input())
+y= int(input())
+print(a[x:y+1])
