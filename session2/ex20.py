@@ -16,3 +16,17 @@
             2: 'i'
         }
 """
+a= input()
+x= int(input())
+l1= []
+l2= []
+for n in range(x):
+    l1.append(n)
+for i in a:
+    l2.append(i)
+print(l1)
+print(l2)
+d1 = zip(l1,l2)
+d2 = dict(d1)
+from pprint import pprint
+pprint (d2)
