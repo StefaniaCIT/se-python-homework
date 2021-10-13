@@ -13,3 +13,16 @@
         False
         False
 """
+a = ()
+l = []
+l1 = []
+while a != 'exit':
+    a = input()
+    if a != 'exit':
+        if int(a) % 2 == 0:
+            l.append(True)
+        else:
+            l.append(False)
+    elif a == 'exit':
+        break
+print(l)
