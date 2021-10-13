@@ -20,9 +20,9 @@ while a != 'exit':
     a = input()
     if a != 'exit':
         if int(a) % 2 == 0:
-            l.append(True)
+            l.append('True')
         else:
-            l.append(False)
+            l.append('False')
     elif a == 'exit':
         break
-print(l)
+print ('\n'.join(l))
