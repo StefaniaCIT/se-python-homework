@@ -7,3 +7,10 @@
         - func('aabbcc')
             ---> 'bbccdd'
 """
+def func(text):
+   l= [ord(c) for c in text]
+   l2 = [c+1 for c in l]
+   return(''.join(chr(c)for c in l2))
+print(func('aabbcc'))
+
+
