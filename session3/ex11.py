@@ -8,6 +8,13 @@
 """
 
 
-# decorate me
+def logout(f):
+    file = open("output11.data", "w")
+    file.write(f())
+    file.close()
+    file = open("output11.data", "r")
+    print(file.read())
+
+@logout
 def f():
     return "CMI"
