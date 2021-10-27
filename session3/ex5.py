@@ -13,5 +13,6 @@
 """
 def func(list):
     return [x+1 for x in list]
-print (func([1,2,3]))
+    
+print(func([1,2,3]))
     

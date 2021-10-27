@@ -19,3 +19,17 @@
         - veti primi input: 'cEVa1'
             ---> ceva1
 """
+
+def upper(my_str):
+    return my_str.upper()
+
+def lower(my_str):
+    return my_str.lower()
+
+def call_changers(func):
+    if len(func) % 2 == 0:
+        return upper(func)
+    else:
+        return lower(func)
+
+print(call_changers('ceva'))

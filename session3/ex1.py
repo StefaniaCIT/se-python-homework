@@ -6,6 +6,7 @@
 
 def power(x, y, z):
     return (x ** y) ** z
+    
 print(power(2, 3, 4))
 
 

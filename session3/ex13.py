@@ -6,6 +6,15 @@
 """
 
 
-# decoarate me
+def modify(text):
+    def uppercase():
+        textupp = text()
+        change = textupp.upper()
+        return change
+    return uppercase
+
+@modify
 def f():
     return 'cmi'
+
+print(f())
