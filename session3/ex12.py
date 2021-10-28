@@ -5,8 +5,19 @@
     Observatii: f nu e la fel ca la ex 11.
 
 """
+def logout(func):
+    def inner(*args):
+        output = func(*args)
+        file = open("output12.data", "w")
+        file.write(str(output))
+        file.close()
+        file = open("output12.data", "r")
+        print(file.read())
+    return inner
 
 
-# decorate me
+@logout
 def f(x):
     print(x)
+
+f(3)
