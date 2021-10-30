@@ -19,3 +19,23 @@
             cmicmi
             b
 """
+def logoutput(func):
+    def inner(*args):
+        output = func(*args)
+        file = open("output17.data", "a")
+        file.write(str(output))
+        file.write('\n')
+        file.close()
+        file = open("output17.data", "r")
+        print(file.read())
+    return inner
+
+import random
+@logoutput
+def f(x):
+    letters = 'qwertyuiopasdfghjklzxcvbnm'
+    return ''.join((random.choice(letters) for i in range(x)))
+
+f(3)
+f(6)
+f(1)
