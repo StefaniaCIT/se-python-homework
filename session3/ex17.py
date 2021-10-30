@@ -34,7 +34,7 @@ import random
 @logoutput
 def f(x):
     letters = 'qwertyuiopasdfghjklzxcvbnm'
-    return ''.join((random.choice(letters) for i in range(x)))
+    return ''.join(random.choice(letters) for i in range(x))
 
 f(3)
 f(6)
